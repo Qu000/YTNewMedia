@@ -102,15 +102,15 @@
 		518E514F2023018400BD22E6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				518E515C2023018400BD22E6 /* Base基类 */,
+				518E51602023018400BD22E6 /* Choose精选 */,
+				518E51582023018400BD22E6 /* Video视频 */,
 				518E51502023018400BD22E6 /* Discover发现 */,
 				518E51542023018400BD22E6 /* Profile我的 */,
-				518E51582023018400BD22E6 /* Video视频 */,
-				518E515C2023018400BD22E6 /* Base基类 */,
-				518E515D2023018400BD22E6 /* Other */,
-				518E515E2023018400BD22E6 /* Libs */,
 				518E515F2023018400BD22E6 /* Network网络层 */,
-				518E51602023018400BD22E6 /* Choose精选 */,
 				518E51642023018400BD22E6 /* Main */,
+				518E515E2023018400BD22E6 /* Libs */,
+				518E515D2023018400BD22E6 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -533,9 +533,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9687TNJ7S;
 				INFOPLIST_FILE = YTNewMedia_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr.Qu.YTNewMedia-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,9 +549,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9687TNJ7S;
 				INFOPLIST_FILE = YTNewMedia_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr.Qu.YTNewMedia-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
