@@ -1,18 +1,18 @@
 //
-//  ClooseViewController.m
+//  ViewController.m
 //  YTNewMedia_iOS
 //
 //  Created by qujiahong on 2018/2/1.
 //  Copyright © 2018年 瞿嘉洪. All rights reserved.
 //
 
-#import "ClooseViewController.h"
+#import "ViewController.h"
 
-@interface ClooseViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation ClooseViewController
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

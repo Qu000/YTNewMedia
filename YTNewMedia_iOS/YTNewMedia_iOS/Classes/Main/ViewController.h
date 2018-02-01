@@ -1,5 +1,5 @@
 //
-//  ClooseViewController.h
+//  ViewController.h
 //  YTNewMedia_iOS
 //
 //  Created by qujiahong on 2018/2/1.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ClooseViewController : UIViewController
+@interface ViewController : UIViewController
 
 @end
