@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		518E512D2022FD8700BD22E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E512C2022FD8700BD22E6 /* AppDelegate.m */; };
-		518E51302022FD8700BD22E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E512F2022FD8700BD22E6 /* ViewController.m */; };
 		518E51332022FD8700BD22E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E51312022FD8700BD22E6 /* Main.storyboard */; };
 		518E51352022FD8700BD22E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518E51342022FD8700BD22E6 /* Assets.xcassets */; };
 		518E51382022FD8700BD22E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E51362022FD8700BD22E6 /* LaunchScreen.storyboard */; };
-		518E513B2022FD8700BD22E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E513A2022FD8700BD22E6 /* main.m */; };
 		518E51452022FD8700BD22E6 /* YTNewMedia_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E51442022FD8700BD22E6 /* YTNewMedia_iOSTests.m */; };
+		518E516A2023018500BD22E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E51662023018400BD22E6 /* ViewController.m */; };
+		518E516B2023018500BD22E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E51672023018400BD22E6 /* main.m */; };
+		518E516C2023018500BD22E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E51682023018400BD22E6 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +28,18 @@
 
 /* Begin PBXFileReference section */
 		518E51282022FD8700BD22E6 /* YTNewMedia_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTNewMedia_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		518E512B2022FD8700BD22E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		518E512C2022FD8700BD22E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		518E512E2022FD8700BD22E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		518E512F2022FD8700BD22E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		518E51322022FD8700BD22E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		518E51342022FD8700BD22E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		518E51372022FD8700BD22E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		518E51392022FD8700BD22E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		518E513A2022FD8700BD22E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		518E51402022FD8700BD22E6 /* YTNewMedia_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTNewMedia_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E51442022FD8700BD22E6 /* YTNewMedia_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTNewMedia_iOSTests.m; sourceTree = "<group>"; };
 		518E51462022FD8700BD22E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518E51652023018400BD22E6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		518E51662023018400BD22E6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		518E51672023018400BD22E6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		518E51682023018400BD22E6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		518E51692023018400BD22E6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,15 +81,11 @@
 		518E512A2022FD8700BD22E6 /* YTNewMedia_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				518E512B2022FD8700BD22E6 /* AppDelegate.h */,
-				518E512C2022FD8700BD22E6 /* AppDelegate.m */,
-				518E512E2022FD8700BD22E6 /* ViewController.h */,
-				518E512F2022FD8700BD22E6 /* ViewController.m */,
+				518E514F2023018400BD22E6 /* Classes */,
 				518E51312022FD8700BD22E6 /* Main.storyboard */,
 				518E51342022FD8700BD22E6 /* Assets.xcassets */,
 				518E51362022FD8700BD22E6 /* LaunchScreen.storyboard */,
 				518E51392022FD8700BD22E6 /* Info.plist */,
-				518E513A2022FD8700BD22E6 /* main.m */,
 			);
 			path = YTNewMedia_iOS;
 			sourceTree = "<group>";
@@ -101,6 +97,186 @@
 				518E51462022FD8700BD22E6 /* Info.plist */,
 			);
 			path = YTNewMedia_iOSTests;
+			sourceTree = "<group>";
+		};
+		518E514F2023018400BD22E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				518E51502023018400BD22E6 /* Discover发现 */,
+				518E51542023018400BD22E6 /* Profile我的 */,
+				518E51582023018400BD22E6 /* Video视频 */,
+				518E515C2023018400BD22E6 /* Base基类 */,
+				518E515D2023018400BD22E6 /* Other */,
+				518E515E2023018400BD22E6 /* Libs */,
+				518E515F2023018400BD22E6 /* Network网络层 */,
+				518E51602023018400BD22E6 /* Choose精选 */,
+				518E51642023018400BD22E6 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		518E51502023018400BD22E6 /* Discover发现 */ = {
+			isa = PBXGroup;
+			children = (
+				518E51512023018400BD22E6 /* Controller */,
+				518E51522023018400BD22E6 /* Model */,
+				518E51532023018400BD22E6 /* View */,
+			);
+			path = "Discover发现";
+			sourceTree = "<group>";
+		};
+		518E51512023018400BD22E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		518E51522023018400BD22E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		518E51532023018400BD22E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		518E51542023018400BD22E6 /* Profile我的 */ = {
+			isa = PBXGroup;
+			children = (
+				518E51552023018400BD22E6 /* Controller */,
+				518E51562023018400BD22E6 /* Model */,
+				518E51572023018400BD22E6 /* View */,
+			);
+			path = "Profile我的";
+			sourceTree = "<group>";
+		};
+		518E51552023018400BD22E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		518E51562023018400BD22E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		518E51572023018400BD22E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		518E51582023018400BD22E6 /* Video视频 */ = {
+			isa = PBXGroup;
+			children = (
+				518E51592023018400BD22E6 /* Controller */,
+				518E515A2023018400BD22E6 /* Model */,
+				518E515B2023018400BD22E6 /* View */,
+			);
+			path = "Video视频";
+			sourceTree = "<group>";
+		};
+		518E51592023018400BD22E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		518E515A2023018400BD22E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		518E515B2023018400BD22E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		518E515C2023018400BD22E6 /* Base基类 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Base基类";
+			sourceTree = "<group>";
+		};
+		518E515D2023018400BD22E6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		518E515E2023018400BD22E6 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		518E515F2023018400BD22E6 /* Network网络层 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network网络层";
+			sourceTree = "<group>";
+		};
+		518E51602023018400BD22E6 /* Choose精选 */ = {
+			isa = PBXGroup;
+			children = (
+				518E51612023018400BD22E6 /* Controller */,
+				518E51622023018400BD22E6 /* Model */,
+				518E51632023018400BD22E6 /* View */,
+			);
+			path = "Choose精选";
+			sourceTree = "<group>";
+		};
+		518E51612023018400BD22E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		518E51622023018400BD22E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		518E51632023018400BD22E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		518E51642023018400BD22E6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				518E51652023018400BD22E6 /* AppDelegate.h */,
+				518E51662023018400BD22E6 /* ViewController.m */,
+				518E51672023018400BD22E6 /* main.m */,
+				518E51682023018400BD22E6 /* AppDelegate.m */,
+				518E51692023018400BD22E6 /* ViewController.h */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518E51302022FD8700BD22E6 /* ViewController.m in Sources */,
-				518E513B2022FD8700BD22E6 /* main.m in Sources */,
-				518E512D2022FD8700BD22E6 /* AppDelegate.m in Sources */,
+				518E516B2023018500BD22E6 /* main.m in Sources */,
+				518E516A2023018500BD22E6 /* ViewController.m in Sources */,
+				518E516C2023018500BD22E6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9687TNJ7S;
 				INFOPLIST_FILE = YTNewMedia_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr.Qu.YTNewMedia-iOS";
@@ -371,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9687TNJ7S;
 				INFOPLIST_FILE = YTNewMedia_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr.Qu.YTNewMedia-iOS";
