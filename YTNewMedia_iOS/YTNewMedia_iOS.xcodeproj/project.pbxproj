@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511DE9A120243B12003C0310 /* YTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9A020243B12003C0310 /* YTBaseViewController.m */; };
+		511DE9A420243B58003C0310 /* YTBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9A320243B58003C0310 /* YTBaseTabBarController.m */; };
+		511DE9A720243B8D003C0310 /* YTBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9A620243B8D003C0310 /* YTBaseNavController.m */; };
+		511DE9AC20243F02003C0310 /* YTChoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9AB20243F02003C0310 /* YTChoseViewController.m */; };
+		511DE9AF20243F37003C0310 /* YTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9AE20243F37003C0310 /* YTVideoViewController.m */; };
+		511DE9B220243F4F003C0310 /* YTDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9B120243F4F003C0310 /* YTDiscoverViewController.m */; };
+		511DE9B8202442A3003C0310 /* YTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9B7202442A3003C0310 /* YTProfileViewController.m */; };
 		518E51332022FD8700BD22E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E51312022FD8700BD22E6 /* Main.storyboard */; };
 		518E51352022FD8700BD22E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518E51342022FD8700BD22E6 /* Assets.xcassets */; };
 		518E51382022FD8700BD22E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E51362022FD8700BD22E6 /* LaunchScreen.storyboard */; };
@@ -27,6 +34,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		511DE99F20243B12003C0310 /* YTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTBaseViewController.h; sourceTree = "<group>"; };
+		511DE9A020243B12003C0310 /* YTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTBaseViewController.m; sourceTree = "<group>"; };
+		511DE9A220243B58003C0310 /* YTBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTBaseTabBarController.h; sourceTree = "<group>"; };
+		511DE9A320243B58003C0310 /* YTBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTBaseTabBarController.m; sourceTree = "<group>"; };
+		511DE9A520243B8D003C0310 /* YTBaseNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTBaseNavController.h; sourceTree = "<group>"; };
+		511DE9A620243B8D003C0310 /* YTBaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTBaseNavController.m; sourceTree = "<group>"; };
+		511DE9A820243BCD003C0310 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		511DE9A920243D98003C0310 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		511DE9AA20243F02003C0310 /* YTChoseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTChoseViewController.h; sourceTree = "<group>"; };
+		511DE9AB20243F02003C0310 /* YTChoseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTChoseViewController.m; sourceTree = "<group>"; };
+		511DE9AD20243F37003C0310 /* YTVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTVideoViewController.h; sourceTree = "<group>"; };
+		511DE9AE20243F37003C0310 /* YTVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTVideoViewController.m; sourceTree = "<group>"; };
+		511DE9B020243F4F003C0310 /* YTDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDiscoverViewController.h; sourceTree = "<group>"; };
+		511DE9B120243F4F003C0310 /* YTDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTDiscoverViewController.m; sourceTree = "<group>"; };
+		511DE9B6202442A3003C0310 /* YTProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTProfileViewController.h; sourceTree = "<group>"; };
+		511DE9B7202442A3003C0310 /* YTProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTProfileViewController.m; sourceTree = "<group>"; };
 		518E51282022FD8700BD22E6 /* YTNewMedia_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTNewMedia_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E51322022FD8700BD22E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		518E51342022FD8700BD22E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +151,8 @@
 		518E51512023018400BD22E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				511DE9B020243F4F003C0310 /* YTDiscoverViewController.h */,
+				511DE9B120243F4F003C0310 /* YTDiscoverViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +184,8 @@
 		518E51552023018400BD22E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				511DE9B6202442A3003C0310 /* YTProfileViewController.h */,
+				511DE9B7202442A3003C0310 /* YTProfileViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +217,8 @@
 		518E51592023018400BD22E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				511DE9AD20243F37003C0310 /* YTVideoViewController.h */,
+				511DE9AE20243F37003C0310 /* YTVideoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +240,12 @@
 		518E515C2023018400BD22E6 /* Base基类 */ = {
 			isa = PBXGroup;
 			children = (
+				511DE99F20243B12003C0310 /* YTBaseViewController.h */,
+				511DE9A020243B12003C0310 /* YTBaseViewController.m */,
+				511DE9A220243B58003C0310 /* YTBaseTabBarController.h */,
+				511DE9A320243B58003C0310 /* YTBaseTabBarController.m */,
+				511DE9A520243B8D003C0310 /* YTBaseNavController.h */,
+				511DE9A620243B8D003C0310 /* YTBaseNavController.m */,
 			);
 			path = "Base基类";
 			sourceTree = "<group>";
@@ -218,6 +253,7 @@
 		518E515D2023018400BD22E6 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				511DE9A820243BCD003C0310 /* Macros.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -249,6 +285,8 @@
 		518E51612023018400BD22E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				511DE9AA20243F02003C0310 /* YTChoseViewController.h */,
+				511DE9AB20243F02003C0310 /* YTChoseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +313,7 @@
 				518E5170202304EB00BD22E6 /* ViewController.h */,
 				518E5171202304EB00BD22E6 /* ViewController.m */,
 				518E51672023018400BD22E6 /* main.m */,
+				511DE9A920243D98003C0310 /* PrefixHeader.pch */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -323,6 +362,7 @@
 		518E51202022FD8700BD22E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YT;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "瞿嘉洪";
 				TargetAttributes = {
@@ -381,9 +421,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511DE9A120243B12003C0310 /* YTBaseViewController.m in Sources */,
+				511DE9B220243F4F003C0310 /* YTDiscoverViewController.m in Sources */,
 				518E5172202304EB00BD22E6 /* ViewController.m in Sources */,
+				511DE9A420243B58003C0310 /* YTBaseTabBarController.m in Sources */,
 				518E516B2023018500BD22E6 /* main.m in Sources */,
 				518E516C2023018500BD22E6 /* AppDelegate.m in Sources */,
+				511DE9AF20243F37003C0310 /* YTVideoViewController.m in Sources */,
+				511DE9A720243B8D003C0310 /* YTBaseNavController.m in Sources */,
+				511DE9AC20243F02003C0310 /* YTChoseViewController.m in Sources */,
+				511DE9B8202442A3003C0310 /* YTProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,9 +580,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9687TNJ7S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YTNewMedia_iOS/Classes/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = YTNewMedia_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -549,9 +597,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9687TNJ7S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YTNewMedia_iOS/Classes/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = YTNewMedia_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
