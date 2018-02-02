@@ -12,7 +12,9 @@
 #import "YTVideoViewController.h"
 #import "YTDiscoverViewController.h"
 #import "YTProfileViewController.h"
+
 #import "YTBaseNavController.h"
+#import "YTCustomNav.h"
 @interface YTBaseTabBarController ()
 
 @end
@@ -25,6 +27,7 @@
     [self setupUI];
     
 }
+
 - (void)setupUI{
     YTChoseViewController * choseVc = [[YTChoseViewController alloc]init];
     [self addChildVc:choseVc withTabTitle:@"精选" title:@"精选" image:@"tab_bar_home" selectedImage:@"tab_bar_home_h"];

@@ -14,6 +14,8 @@
 		511DE9AF20243F37003C0310 /* YTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9AE20243F37003C0310 /* YTVideoViewController.m */; };
 		511DE9B220243F4F003C0310 /* YTDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9B120243F4F003C0310 /* YTDiscoverViewController.m */; };
 		511DE9B8202442A3003C0310 /* YTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9B7202442A3003C0310 /* YTProfileViewController.m */; };
+		511DE9BB20244971003C0310 /* YTCustomNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9BA20244971003C0310 /* YTCustomNav.m */; };
+		511DE9BE202462F7003C0310 /* YTChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9BD202462F7003C0310 /* YTChooseCell.m */; };
 		518E51332022FD8700BD22E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E51312022FD8700BD22E6 /* Main.storyboard */; };
 		518E51352022FD8700BD22E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518E51342022FD8700BD22E6 /* Assets.xcassets */; };
 		518E51382022FD8700BD22E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E51362022FD8700BD22E6 /* LaunchScreen.storyboard */; };
@@ -21,6 +23,8 @@
 		518E516B2023018500BD22E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E51672023018400BD22E6 /* main.m */; };
 		518E516C2023018500BD22E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E51682023018400BD22E6 /* AppDelegate.m */; };
 		518E5172202304EB00BD22E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E5171202304EB00BD22E6 /* ViewController.m */; };
+		5DC73153414DB1B4AAB416B0 /* libPods-YTNewMedia_iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489C3CD703E64502CC2CD29F /* libPods-YTNewMedia_iOSTests.a */; };
+		E09CF69DF87F74DB121330A6 /* libPods-YTNewMedia_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84988FF4177244DA1AF56353 /* libPods-YTNewMedia_iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34A0A231D212B0B634083DE0 /* Pods-YTNewMedia_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTNewMedia_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YTNewMedia_iOSTests/Pods-YTNewMedia_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		489C3CD703E64502CC2CD29F /* libPods-YTNewMedia_iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YTNewMedia_iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		511DE99F20243B12003C0310 /* YTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTBaseViewController.h; sourceTree = "<group>"; };
 		511DE9A020243B12003C0310 /* YTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTBaseViewController.m; sourceTree = "<group>"; };
 		511DE9A220243B58003C0310 /* YTBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTBaseTabBarController.h; sourceTree = "<group>"; };
@@ -50,6 +56,10 @@
 		511DE9B120243F4F003C0310 /* YTDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTDiscoverViewController.m; sourceTree = "<group>"; };
 		511DE9B6202442A3003C0310 /* YTProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTProfileViewController.h; sourceTree = "<group>"; };
 		511DE9B7202442A3003C0310 /* YTProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTProfileViewController.m; sourceTree = "<group>"; };
+		511DE9B920244971003C0310 /* YTCustomNav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTCustomNav.h; sourceTree = "<group>"; };
+		511DE9BA20244971003C0310 /* YTCustomNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTCustomNav.m; sourceTree = "<group>"; };
+		511DE9BC202462F7003C0310 /* YTChooseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTChooseCell.h; sourceTree = "<group>"; };
+		511DE9BD202462F7003C0310 /* YTChooseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTChooseCell.m; sourceTree = "<group>"; };
 		518E51282022FD8700BD22E6 /* YTNewMedia_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTNewMedia_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E51322022FD8700BD22E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		518E51342022FD8700BD22E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +73,10 @@
 		518E51682023018400BD22E6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		518E5170202304EB00BD22E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		518E5171202304EB00BD22E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84988FF4177244DA1AF56353 /* libPods-YTNewMedia_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YTNewMedia_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EE8DA273BBBFC4CBF54673 /* Pods-YTNewMedia_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTNewMedia_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTNewMedia_iOS/Pods-YTNewMedia_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		94BA787A92254D751F66FF0D /* Pods-YTNewMedia_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTNewMedia_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTNewMedia_iOSTests/Pods-YTNewMedia_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B36EAA9B332D6540B0A72CDD /* Pods-YTNewMedia_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTNewMedia_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-YTNewMedia_iOS/Pods-YTNewMedia_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09CF69DF87F74DB121330A6 /* libPods-YTNewMedia_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,18 +92,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC73153414DB1B4AAB416B0 /* libPods-YTNewMedia_iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C399FF7EA92A360D8891A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84988FF4177244DA1AF56353 /* libPods-YTNewMedia_iOS.a */,
+				489C3CD703E64502CC2CD29F /* libPods-YTNewMedia_iOSTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		518E511F2022FD8700BD22E6 = {
 			isa = PBXGroup;
 			children = (
 				518E512A2022FD8700BD22E6 /* YTNewMedia_iOS */,
 				518E51432022FD8700BD22E6 /* YTNewMedia_iOSTests */,
 				518E51292022FD8700BD22E6 /* Products */,
+				E7B628D8030871421AFD2A6A /* Pods */,
+				21C399FF7EA92A360D8891A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +273,8 @@
 				511DE9A320243B58003C0310 /* YTBaseTabBarController.m */,
 				511DE9A520243B8D003C0310 /* YTBaseNavController.h */,
 				511DE9A620243B8D003C0310 /* YTBaseNavController.m */,
+				511DE9B920244971003C0310 /* YTCustomNav.h */,
+				511DE9BA20244971003C0310 /* YTCustomNav.m */,
 			);
 			path = "Base基类";
 			sourceTree = "<group>";
@@ -301,6 +330,8 @@
 		518E51632023018400BD22E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				511DE9BC202462F7003C0310 /* YTChooseCell.h */,
+				511DE9BD202462F7003C0310 /* YTChooseCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +349,17 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		E7B628D8030871421AFD2A6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93EE8DA273BBBFC4CBF54673 /* Pods-YTNewMedia_iOS.debug.xcconfig */,
+				B36EAA9B332D6540B0A72CDD /* Pods-YTNewMedia_iOS.release.xcconfig */,
+				94BA787A92254D751F66FF0D /* Pods-YTNewMedia_iOSTests.debug.xcconfig */,
+				34A0A231D212B0B634083DE0 /* Pods-YTNewMedia_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,9 +367,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 518E51492022FD8700BD22E6 /* Build configuration list for PBXNativeTarget "YTNewMedia_iOS" */;
 			buildPhases = (
+				8A690232E9676289F22859E7 /* [CP] Check Pods Manifest.lock */,
 				518E51242022FD8700BD22E6 /* Sources */,
 				518E51252022FD8700BD22E6 /* Frameworks */,
 				518E51262022FD8700BD22E6 /* Resources */,
+				C6934C2F26FE66E70FD261D6 /* [CP] Embed Pods Frameworks */,
+				2DD459F7021DAA22CECDECBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,9 +387,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 518E514C2022FD8700BD22E6 /* Build configuration list for PBXNativeTarget "YTNewMedia_iOSTests" */;
 			buildPhases = (
+				56538FDDE05B6B56FEC08FF1 /* [CP] Check Pods Manifest.lock */,
 				518E513C2022FD8700BD22E6 /* Sources */,
 				518E513D2022FD8700BD22E6 /* Frameworks */,
 				518E513E2022FD8700BD22E6 /* Resources */,
+				1CDBFDAAF4EC0CF12820FF51 /* [CP] Embed Pods Frameworks */,
+				CD2A7EC89D292B3866890A3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -416,6 +464,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CDBFDAAF4EC0CF12820FF51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTNewMedia_iOSTests/Pods-YTNewMedia_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DD459F7021DAA22CECDECBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTNewMedia_iOS/Pods-YTNewMedia_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56538FDDE05B6B56FEC08FF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YTNewMedia_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A690232E9676289F22859E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YTNewMedia_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6934C2F26FE66E70FD261D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTNewMedia_iOS/Pods-YTNewMedia_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD2A7EC89D292B3866890A3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTNewMedia_iOSTests/Pods-YTNewMedia_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		518E51242022FD8700BD22E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -428,6 +575,8 @@
 				518E516B2023018500BD22E6 /* main.m in Sources */,
 				518E516C2023018500BD22E6 /* AppDelegate.m in Sources */,
 				511DE9AF20243F37003C0310 /* YTVideoViewController.m in Sources */,
+				511DE9BE202462F7003C0310 /* YTChooseCell.m in Sources */,
+				511DE9BB20244971003C0310 /* YTCustomNav.m in Sources */,
 				511DE9A720243B8D003C0310 /* YTBaseNavController.m in Sources */,
 				511DE9AC20243F02003C0310 /* YTChoseViewController.m in Sources */,
 				511DE9B8202442A3003C0310 /* YTProfileViewController.m in Sources */,
@@ -578,6 +727,7 @@
 		};
 		518E514A2022FD8700BD22E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93EE8DA273BBBFC4CBF54673 /* Pods-YTNewMedia_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,6 +745,7 @@
 		};
 		518E514B2022FD8700BD22E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36EAA9B332D6540B0A72CDD /* Pods-YTNewMedia_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -612,6 +763,7 @@
 		};
 		518E514D2022FD8700BD22E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94BA787A92254D751F66FF0D /* Pods-YTNewMedia_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -626,6 +778,7 @@
 		};
 		518E514E2022FD8700BD22E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A0A231D212B0B634083DE0 /* Pods-YTNewMedia_iOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
