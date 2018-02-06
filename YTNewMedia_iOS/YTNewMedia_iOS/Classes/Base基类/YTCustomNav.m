@@ -18,7 +18,7 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor purpleColor];
+        self.backgroundColor = [UIColor whiteColor];
         
     }
     return self;
@@ -27,9 +27,8 @@
 - (void)setBtnType:(NSString *)typeName{
     
     UIButton * typeBtn = [[UIButton alloc]init];
-    [typeBtn setBackgroundColor:[UIColor orangeColor]];
     [typeBtn setTitle:typeName forState:UIControlStateNormal];
-    [typeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [typeBtn setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
     [typeBtn.titleLabel setFont:[UIFont systemFontOfSize:24]];
     [typeBtn addTarget:self action:@selector(clickTypeBtn) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:typeBtn];
@@ -44,13 +43,13 @@
 
 -(void)layoutSubviews{
     CGFloat typeBtnX = 10;
-    CGFloat typeBtnY = 10;
+    CGFloat typeBtnY = 20;
     CGFloat typeBtnW = 50;
     CGFloat typeBtnH = 30;
     self.typeBtn.frame = CGRectMake(typeBtnX, typeBtnY, typeBtnW, typeBtnH);
     CGFloat searchBtnW = 50;
     CGFloat searchBtnX = self.width - searchBtnW - 10;
-    CGFloat searchBtnY = 10;
+    CGFloat searchBtnY = 20;
     CGFloat searchBtnH = 30;
     self.searchBtn.frame = CGRectMake(searchBtnX, searchBtnY, searchBtnW, searchBtnH);
 }
