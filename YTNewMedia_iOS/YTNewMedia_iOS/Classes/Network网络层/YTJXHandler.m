@@ -10,9 +10,12 @@
 
 #import "YTHttpTool.h"
 #import "Data.h"
+#import "YTChoseViewController.h"
+
 @implementation YTJXHandler
 
 + (void)executeGetJXTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed{
+    
     // 获取时间（非本地时区，需转换）
     NSDate * today = [NSDate date];
     NSTimeZone *zone = [NSTimeZone systemTimeZone];
@@ -21,6 +24,7 @@
     NSDate *localeDate = [today dateByAddingTimeInterval:interval];
     // 时间转换成时间戳
     NSString *timeSp = [NSString stringWithFormat:@"%ld",(long)[localeDate timeIntervalSince1970]];//@"1517468580"
+
     NSDictionary * param = @{@"client_type":@"1",
                              @"client_version":@"3.2.6",
                              @"build_version":@"100938",
@@ -30,6 +34,7 @@
                              @"offset":@"0",
                              @"limit":@"10"
                              };
+    
     [YTHttpTool getWithPath:API_JX params:param success:^(id json) {
         if ([json[@"dm_error"] integerValue]) {
             
@@ -38,7 +43,7 @@
         }
         else{
             success(json);
-//            返回信息正确--数据解析
+            //            返回信息正确--数据解析
             NSArray * datas = [Data mj_objectArrayWithKeyValuesArray:json[@"data"]];
             success(datas);
             
@@ -47,6 +52,7 @@
     } failure:^(NSError *error) {
         failed(error);
     }];
+    
 }
 
 + (void)executeGetJXRefreshDownTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed{

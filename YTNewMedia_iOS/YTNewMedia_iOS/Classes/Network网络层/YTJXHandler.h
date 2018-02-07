@@ -23,4 +23,5 @@
  * failed
  */
 + (void)executeGetJXRefreshDownTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed;
+
 @end

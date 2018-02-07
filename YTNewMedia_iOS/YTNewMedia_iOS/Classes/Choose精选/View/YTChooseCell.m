@@ -104,7 +104,6 @@
     CGFloat storyTagY = itemTimeY;
     self.storyTagLab.frame = CGRectMake(storyTagX, storyTagY, storyTagW, 20);
     
-//    self.block(self.cellH);
     self.cellH = CGRectGetMaxY(self.storyTagLab.frame);
     
 }
