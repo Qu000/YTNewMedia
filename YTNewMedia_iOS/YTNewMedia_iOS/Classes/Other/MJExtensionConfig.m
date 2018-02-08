@@ -7,8 +7,8 @@
 //
 
 #import "MJExtensionConfig.h"
-#import "RootClass.h"
 #import "Data.h"
+#import "YTVideoModel.h"
 
 @implementation MJExtensionConfig
 
@@ -27,14 +27,13 @@
 //    }];
     
     //下滑线
-    [RootClass mj_setupReplacedKeyFromPropertyName121:^NSString *(NSString *propertyName) {
-        return [propertyName mj_underlineFromCamel];
-    }];
-    
     [Data mj_setupReplacedKeyFromPropertyName121:^NSString *(NSString *propertyName) {
         return [propertyName mj_underlineFromCamel];
     }];
     
+    [YTVideoModel mj_setupReplacedKeyFromPropertyName121:^NSString *(NSString *propertyName) {
+        return [propertyName mj_underlineFromCamel];
+    }];
     //下滑线
     /*
     [JHFlow mj_setupReplacedKeyFromPropertyName121:^NSString *(NSString *propertyName) {

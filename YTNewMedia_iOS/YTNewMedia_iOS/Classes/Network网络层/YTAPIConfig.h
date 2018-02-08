@@ -18,4 +18,10 @@
 /** 精选上拉刷新*/
 #define API_JXRefreshDown @"v2/home/channel/1/"
 
+/** 精选下拉刷新*/
+#define API_Video @"v2/home/channel/3/refresh"
+/** 精选上拉刷新*/
+#define API_VideoRefreshDown @"v2/home/channel/3/"
+
+
 @end

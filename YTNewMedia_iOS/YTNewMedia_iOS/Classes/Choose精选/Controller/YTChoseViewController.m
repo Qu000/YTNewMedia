@@ -14,8 +14,6 @@
 
 #import "YTCustomNav.h"
 #import "YTChooseCell.h"
-#import "YTJXHandler.h"
-#import "RootClass.h"
 #import "MJRefresh.h"
 
 #import "AFNetworking.h"
@@ -55,6 +53,7 @@
 #pragma mark --- Systems method
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.pages = 10;
     self.tableView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
     [self setupNav];
     

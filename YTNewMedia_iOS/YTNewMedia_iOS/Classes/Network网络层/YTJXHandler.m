@@ -10,8 +10,6 @@
 
 #import "YTHttpTool.h"
 #import "Data.h"
-#import "YTChoseViewController.h"
-
 @implementation YTJXHandler
 
 + (void)executeGetJXTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed{
