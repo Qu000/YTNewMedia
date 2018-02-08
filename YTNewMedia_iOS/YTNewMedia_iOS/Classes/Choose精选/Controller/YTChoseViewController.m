@@ -97,16 +97,38 @@
     return (SCREEN_HEIGHT-64-44-20);
     
 }
-
+#warning 需要做进一步的细节处理
 #pragma mark --- 下拉刷新
 - (void)refreshTop{
 // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+//    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    
+     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    
+    // 设置不同状态的动画图片
+    NSMutableArray *idleImages = [NSMutableArray array];
+    for (NSUInteger i = 2; i<=5; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"t%zd", i]];
+        [idleImages addObject:image];
+    }
+    //普通状态
+    [header setImages:idleImages forState:MJRefreshStateIdle];
+    //即将刷新
+    [header setImages:idleImages forState:MJRefreshStatePulling];
+    //正在刷新
+    [header setImages:idleImages forState:MJRefreshStateRefreshing];
+    // 隐藏时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    // 隐藏状态
+    header.stateLabel.hidden = YES;
+    // 设置 header
+    self.tableView.mj_header = header;
     
     // 马上进入刷新状态
     [self.tableView.mj_header beginRefreshing];
     
 }
+
 - (void)loadNewData{
     NSLog(@"加载下拉刷新数据");
     NSString * timeSp = [self getNowTime];
@@ -142,11 +164,33 @@
 
 #pragma mark --- 上拉刷新
 - (void)refreshDowm{
-    
+    /*
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadOldData)];
-    
+
     // 马上进入刷新状态
     [self.tableView.mj_footer beginRefreshing];
+    */
+    
+    // 设置回调（一旦进入刷新状态，就调用 target 的 action，即调用 self 的 loadMoreData 方法）
+    MJRefreshAutoGifFooter *footer = [MJRefreshAutoGifFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadOldData)];
+
+    // 设置不同状态的动画图片
+    NSMutableArray *idleImages = [NSMutableArray array];
+    for (NSUInteger i = 2; i<=5; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"t%zd", i]];
+        [idleImages addObject:image];
+    }
+    //普通状态
+    [footer setImages:idleImages forState:MJRefreshStateIdle];
+    //即将刷新
+    [footer setImages:idleImages forState:MJRefreshStatePulling];
+    //正在刷新
+    [footer setImages:idleImages forState:MJRefreshStateRefreshing];
+    // 隐藏刷新状态文字
+    footer.refreshingTitleHidden = YES;
+    // 设置尾部
+    self.tableView.mj_footer = footer;
+
 }
 
 - (void)loadOldData{
