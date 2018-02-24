@@ -42,7 +42,7 @@
 #pragma mark --- Custom method
 - (void)setupNav{
     YTCustomNav * customNav = [[YTCustomNav alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
-    [customNav setBtnType:@"视频"];
+    [customNav setBtnType:@"发现"];
     UIWindow *appWindow = [UIApplication sharedApplication].keyWindow;
     [appWindow addSubview:customNav];
 }

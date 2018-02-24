@@ -7,8 +7,11 @@
 //
 
 #import "YTProfileViewController.h"
+#import "YTCustomNav.h"
 
 @interface YTProfileViewController ()
+@property (strong, nonatomic) UIWindow *appWindow;
+@property (nonatomic, strong) UIScrollView * scrollView;
 
 @end
 
@@ -31,10 +34,32 @@
     [super viewDidLoad];
     
     [self setupNav];
+    [self setupScrollView];
+    [self setupControls];
 }
 
+#pragma mark --- Custom method
 - (void)setupNav{
+    YTCustomNav * customNav = [[YTCustomNav alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    [customNav setBtnType:@"我的"];
+    UIWindow *appWindow = [UIApplication sharedApplication].keyWindow;
+    [appWindow addSubview:customNav];
+}
+- (void)setupScrollView{
+    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64-44)];
+    scrollView.backgroundColor = [UIColor purpleColor];
+    scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-64-44);
+    [self.view addSubview:scrollView];
+    self.scrollView = scrollView;
+}
+- (void)setupControls{
+    UIImageView * headImg = [[UIImageView alloc]init];
+    headImg.backgroundColor = [UIColor orangeColor];
+    CGFloat headWH = 100;
+    
+    headImg.frame = CGRectMake(150, 60, headWH, headWH);
+    [self.scrollView addSubview:headImg];
+    
     
 }
-
 @end
