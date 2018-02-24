@@ -220,7 +220,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return (SCREEN_HEIGHT-64-44-90);
+    return (SCREEN_HEIGHT-64-44-20);
     
 }
 

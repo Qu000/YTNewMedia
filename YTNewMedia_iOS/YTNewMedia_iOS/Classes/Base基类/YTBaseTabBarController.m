@@ -17,6 +17,8 @@
 #import "YTCustomNav.h"
 @interface YTBaseTabBarController ()
 
+
+@property (strong, nonatomic) UIWindow *appWindow;
 @end
 
 @implementation YTBaseTabBarController
@@ -29,6 +31,7 @@
 }
 
 - (void)setupUI{
+    
     YTChoseViewController * choseVc = [[YTChoseViewController alloc]init];
     [self addChildVc:choseVc withTabTitle:@"精选" title:@"精选" image:@"tab_bar_home" selectedImage:@"tab_bar_home_h"];
     
@@ -42,6 +45,7 @@
     [self addChildVc:profileVc withTabTitle:@"我的" title:@"我的" image:@"tab_bar_profile" selectedImage:@"tab_bar_profile_h"];
 }
 - (void)addChildVc:(UIViewController *)childVc withTabTitle:(NSString *)tabTitle title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage{
+    
     childVc.navigationItem.title = title;
     childVc.title = tabTitle;
     childVc.tabBarItem.image = [UIImage imageNamed:image];
@@ -66,6 +70,14 @@
     
     //添加子控制器
     [self addChildViewController:nav];
+    
+    
+    /*
+     YTCustomNav * customNav = [[YTCustomNav alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+     [customNav setBtnType:title];
+     self.appWindow = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+     [self.appWindow addSubview:customNav];
+     */
     
 }
 

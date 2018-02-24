@@ -22,6 +22,7 @@
 @property (nonatomic, strong)NSMutableArray * dataList;
 @property (nonatomic, strong)NSMutableArray * tempArr;
 @property (nonatomic, assign)NSInteger pages;
+@property (strong, nonatomic) UIWindow *appWindow;
 @end
 
 @implementation YTChoseViewController
@@ -64,14 +65,9 @@
 #pragma mark --- Custom method
 - (void)setupNav{
     YTCustomNav * customNav = [[YTCustomNav alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
-//    self.block(@"精选");
-//    YTCustomNav * customNav = [[YTCustomNav alloc]init];
     [customNav setBtnType:@"精选"];
-//    [self.view addSubview:customNav];
-//    self.topView = customNav;
-    
-    UIWindow *appWindow = [UIApplication sharedApplication].keyWindow;
-    [appWindow addSubview:customNav];
+    self.appWindow = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    [self.appWindow addSubview:customNav];
 }
 
 
@@ -96,10 +92,20 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return (SCREEN_HEIGHT-64-44-90);//20
+    return (SCREEN_HEIGHT-64-44-20);//20//90
     
 }
-
+#pragma mark --- 监测上滑下滑
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGPoint h = [scrollView.panGestureRecognizer velocityInView:scrollView];
+    if (h.y > 0) {
+        NSLog(@"向下滑");
+        self.appWindow.hidden = YES;
+    }else{
+        NSLog(@"向上滑");
+        self.appWindow.hidden = NO;
+    }
+}
 #pragma mark --- 下拉刷新
 - (void)refreshTop{
 // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
@@ -244,6 +250,21 @@
     return timeSp;
 }
 
+
+/*pragma mark --- 监测上滑下滑
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    self.oldY = scrollView.contentOffset.y;
+}
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if( scrollView.contentOffset.y > self.oldY) {
+        NSLog(@"向下滑");
+        self.appWindow.hidden = YES;
+    }else{
+        NSLog(@"向上滑");
+        self.appWindow.hidden = NO;
+    }
+}
+ */
 /* 删除行
 -(NSArray*)tableView:(UITableView*)tableView editActionsForRowAtIndexPath:(NSIndexPath*)indexPath
 {
