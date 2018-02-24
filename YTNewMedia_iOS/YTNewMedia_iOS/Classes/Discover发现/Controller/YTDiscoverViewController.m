@@ -7,8 +7,10 @@
 //
 
 #import "YTDiscoverViewController.h"
-
+#import "YTDiscoverCell.h"
+#import "YTCustomNav.h"
 @interface YTDiscoverViewController ()
+@property (strong, nonatomic) UIWindow *appWindow;
 
 @end
 
@@ -29,40 +31,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.tableView.contentInset = UIEdgeInsetsMake(44, 0, 0, 0);
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark --- Custom method
+- (void)setupNav{
+    YTCustomNav * customNav = [[YTCustomNav alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    [customNav setBtnType:@"视频"];
+    UIWindow *appWindow = [UIApplication sharedApplication].keyWindow;
+    [appWindow addSubview:customNav];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return 1;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    /*
+     if (indexPath.row == 0) {
+     //特殊的一个cell[九宫格]
+     //或者另一个思路，使用contentInset,可以不区分，更方便
+     }else{
+     //普通cell
+     }
+     */
+    YTDiscoverCell * cell = [YTDiscoverCell cellWithTableView:tableView];
     
     return cell;
 }
-*/
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return (SCREEN_HEIGHT-64-44-100);
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

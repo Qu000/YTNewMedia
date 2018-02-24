@@ -98,11 +98,15 @@
 #pragma mark --- 监测上滑下滑
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGPoint h = [scrollView.panGestureRecognizer velocityInView:scrollView];
+    
     if (h.y > 0) {
         NSLog(@"向下滑");
-        self.appWindow.hidden = YES;
+        self.appWindow.hidden = NO;
     }else{
         NSLog(@"向上滑");
+        self.appWindow.hidden = YES;
+    }
+    if (scrollView.contentOffset.y == -64) {
         self.appWindow.hidden = NO;
     }
 }

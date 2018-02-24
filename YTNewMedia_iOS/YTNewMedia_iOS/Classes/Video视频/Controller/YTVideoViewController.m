@@ -17,8 +17,9 @@
 
 @property (nonatomic, strong)NSMutableArray * dataList;
 @property (nonatomic, strong)NSMutableArray * tempArr;
-
 @property (nonatomic, assign)NSInteger pages;
+@property (strong, nonatomic) UIWindow *appWindow;
+
 @end
 
 @implementation YTVideoViewController
@@ -62,6 +63,48 @@
     [customNav setBtnType:@"视频"];
     UIWindow *appWindow = [UIApplication sharedApplication].keyWindow;
     [appWindow addSubview:customNav];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return self.dataList.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    YTVideoCell * cell = [YTVideoCell cellWithTableView:tableView];
+    
+    cell.data = self.dataList[indexPath.row];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return (SCREEN_HEIGHT-64-44-20);
+    
+}
+#pragma mark --- 监测上滑下滑
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGPoint h = [scrollView.panGestureRecognizer velocityInView:scrollView];
+    
+    if (h.y > 0) {
+        NSLog(@"向下滑");
+        self.appWindow.hidden = NO;
+    }else{
+        NSLog(@"向上滑");
+        self.appWindow.hidden = YES;
+    }
+    if (scrollView.contentOffset.y == -64) {
+        self.appWindow.hidden = NO;
+    }
 }
 #pragma mark --- 下拉刷新
 - (void)refreshTop{
@@ -197,31 +240,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return self.dataList.count;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    YTVideoCell * cell = [YTVideoCell cellWithTableView:tableView];
-    
-    cell.data = self.dataList[indexPath.row];
-    
-    return cell;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return (SCREEN_HEIGHT-64-44-20);
-    
-}
 
 @end

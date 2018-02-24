@@ -16,6 +16,8 @@
 		511DE9B8202442A3003C0310 /* YTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9B7202442A3003C0310 /* YTProfileViewController.m */; };
 		511DE9BB20244971003C0310 /* YTCustomNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9BA20244971003C0310 /* YTCustomNav.m */; };
 		511DE9BE202462F7003C0310 /* YTChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 511DE9BD202462F7003C0310 /* YTChooseCell.m */; };
+		51261E5C20413E6000C7E458 /* YTDiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51261E5B20413E6000C7E458 /* YTDiscoverCell.m */; };
+		51261E5F2041485500C7E458 /* YTDiscoverCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51261E5E2041485500C7E458 /* YTDiscoverCollectionCell.m */; };
 		512F32962029ADA10030BB4D /* YTJXHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AD784A20283BB700450709 /* YTJXHandler.m */; };
 		512F32972029AE0E0030BB4D /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AD783C20282FE200450709 /* Data.m */; };
 		512F32992029AE0E0030BB4D /* YTHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AD784420283A3F00450709 /* YTHttpTool.m */; };
@@ -68,6 +70,10 @@
 		511DE9BA20244971003C0310 /* YTCustomNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTCustomNav.m; sourceTree = "<group>"; };
 		511DE9BC202462F7003C0310 /* YTChooseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTChooseCell.h; sourceTree = "<group>"; };
 		511DE9BD202462F7003C0310 /* YTChooseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTChooseCell.m; sourceTree = "<group>"; };
+		51261E5A20413E6000C7E458 /* YTDiscoverCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDiscoverCell.h; sourceTree = "<group>"; };
+		51261E5B20413E6000C7E458 /* YTDiscoverCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTDiscoverCell.m; sourceTree = "<group>"; };
+		51261E5D2041485500C7E458 /* YTDiscoverCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDiscoverCollectionCell.h; sourceTree = "<group>"; };
+		51261E5E2041485500C7E458 /* YTDiscoverCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTDiscoverCollectionCell.m; sourceTree = "<group>"; };
 		518E51282022FD8700BD22E6 /* YTNewMedia_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTNewMedia_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E51322022FD8700BD22E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		518E51342022FD8700BD22E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -219,6 +225,10 @@
 		518E51532023018400BD22E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51261E5A20413E6000C7E458 /* YTDiscoverCell.h */,
+				51261E5B20413E6000C7E458 /* YTDiscoverCell.m */,
+				51261E5D2041485500C7E458 /* YTDiscoverCollectionCell.h */,
+				51261E5E2041485500C7E458 /* YTDiscoverCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,9 +640,11 @@
 				51D9B104202BF2800031068C /* YTVideoModel.m in Sources */,
 				511DE9BE202462F7003C0310 /* YTChooseCell.m in Sources */,
 				511DE9BB20244971003C0310 /* YTCustomNav.m in Sources */,
+				51261E5C20413E6000C7E458 /* YTDiscoverCell.m in Sources */,
 				511DE9A720243B8D003C0310 /* YTBaseNavController.m in Sources */,
 				511DE9AC20243F02003C0310 /* YTChoseViewController.m in Sources */,
 				511DE9B8202442A3003C0310 /* YTProfileViewController.m in Sources */,
+				51261E5F2041485500C7E458 /* YTDiscoverCollectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
