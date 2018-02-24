@@ -9,6 +9,7 @@
 #import "YTVideoViewController.h"
 #import "YTVideoModel.h"
 #import "YTVideoCell.h"
+#import "YTCustomNav.h"
 
 #import "MJRefresh.h"
 #import "AFNetworking.h"
@@ -54,6 +55,13 @@
     
     [self refreshTop];
     [self refreshDowm];
+}
+#pragma mark --- Custom method
+- (void)setupNav{
+    YTCustomNav * customNav = [[YTCustomNav alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    [customNav setBtnType:@"视频"];
+    UIWindow *appWindow = [UIApplication sharedApplication].keyWindow;
+    [appWindow addSubview:customNav];
 }
 #pragma mark --- 下拉刷新
 - (void)refreshTop{
@@ -212,7 +220,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return (SCREEN_HEIGHT-64-44-20);
+    return (SCREEN_HEIGHT-64-44-90);
     
 }
 

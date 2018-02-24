@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^CallBackBlcok) (NSString * pageStr);
+//typedef void(^CallBackTypeName) (NSString * typeName);
 
 @interface YTChoseViewController : UITableViewController
 
+//@property (nonatomic, copy) CallBackTypeName block;
 
 @end
 

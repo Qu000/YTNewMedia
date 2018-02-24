@@ -18,7 +18,7 @@
 
 #import "AFNetworking.h"
 @interface YTChoseViewController ()
-//@property (nonatomic, weak)YTCustomNav * topView;
+
 @property (nonatomic, strong)NSMutableArray * dataList;
 @property (nonatomic, strong)NSMutableArray * tempArr;
 @property (nonatomic, assign)NSInteger pages;
@@ -29,12 +29,12 @@
 #pragma mark --- To prepare
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+
     [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
+
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 -(NSMutableArray *)dataList{
@@ -64,9 +64,12 @@
 #pragma mark --- Custom method
 - (void)setupNav{
     YTCustomNav * customNav = [[YTCustomNav alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+//    self.block(@"精选");
+//    YTCustomNav * customNav = [[YTCustomNav alloc]init];
     [customNav setBtnType:@"精选"];
 //    [self.view addSubview:customNav];
 //    self.topView = customNav;
+    
     UIWindow *appWindow = [UIApplication sharedApplication].keyWindow;
     [appWindow addSubview:customNav];
 }
@@ -93,10 +96,10 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return (SCREEN_HEIGHT-64-44-20);
+    return (SCREEN_HEIGHT-64-44-90);//20
     
 }
-#warning 需要做进一步的细节处理
+
 #pragma mark --- 下拉刷新
 - (void)refreshTop{
 // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
@@ -129,7 +132,7 @@
 }
 
 - (void)loadNewData{
-    NSLog(@"加载下拉刷新数据");
+    
     NSString * timeSp = [self getNowTime];
     AFHTTPSessionManager * manger = [AFHTTPSessionManager manager];
     NSDictionary * param = @{@"client_type":@"1",
@@ -193,7 +196,7 @@
 }
 
 - (void)loadOldData{
-    NSLog(@"加载上拉刷新数据");
+    
     NSString * timeSp = [self getNowTime];
     NSString * pagesStr = [NSString stringWithFormat:@"%ld",(long)self.pages];
     AFHTTPSessionManager * manger = [AFHTTPSessionManager manager];
@@ -240,6 +243,22 @@
     NSString *timeSp = [NSString stringWithFormat:@"%ld",(long)[localeDate timeIntervalSince1970]];//@"1517468580"
     return timeSp;
 }
+
+/* 删除行
+-(NSArray*)tableView:(UITableView*)tableView editActionsForRowAtIndexPath:(NSIndexPath*)indexPath
+{
+    UITableViewRowAction*rowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除"handler:^(UITableViewRowAction* _Nonnull action,NSIndexPath* _Nonnull indexPath)
+    {
+        NSLog(@"删除--，%ld", indexPath.row);
+        NSLog(@"删除--，%ld", indexPath.section);
+        [self.dataList removeObjectAtIndex:indexPath.row];
+        
+        [self.tableView reloadData];
+    }];
+    
+    return @[rowAction];
+}
+*/
 /*
     防止循环引用
  
