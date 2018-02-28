@@ -14,7 +14,7 @@
 #import "YTProfileViewController.h"
 
 #import "YTBaseNavController.h"
-#import "YTCustomNav.h"
+
 @interface YTBaseTabBarController ()
 
 

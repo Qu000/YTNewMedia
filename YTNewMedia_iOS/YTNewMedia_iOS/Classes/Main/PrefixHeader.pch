@@ -15,4 +15,5 @@
 #import "UIImageView+SDWebImage.h"
 #import "SDWebImageManager.h"
 #import "MJExtension.h"
+#import "Masonry.h"
 #endif /* PrefixHeader_pch */

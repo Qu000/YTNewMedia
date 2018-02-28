@@ -33,6 +33,7 @@
 		518E5172202304EB00BD22E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518E5171202304EB00BD22E6 /* ViewController.m */; };
 		51D9B104202BF2800031068C /* YTVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D9B103202BF2800031068C /* YTVideoModel.m */; };
 		51D9B10A202BF4800031068C /* YTVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D9B109202BF4800031068C /* YTVideoCell.m */; };
+		51E8D9B42042942100833CCC /* YTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E8D9B32042942100833CCC /* YTNavigationBar.m */; };
 		5DC73153414DB1B4AAB416B0 /* libPods-YTNewMedia_iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489C3CD703E64502CC2CD29F /* libPods-YTNewMedia_iOSTests.a */; };
 		E09CF69DF87F74DB121330A6 /* libPods-YTNewMedia_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84988FF4177244DA1AF56353 /* libPods-YTNewMedia_iOS.a */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,8 @@
 		51D9B103202BF2800031068C /* YTVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTVideoModel.m; sourceTree = "<group>"; };
 		51D9B108202BF4800031068C /* YTVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTVideoCell.h; sourceTree = "<group>"; };
 		51D9B109202BF4800031068C /* YTVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTVideoCell.m; sourceTree = "<group>"; };
+		51E8D9B22042942100833CCC /* YTNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTNavigationBar.h; sourceTree = "<group>"; };
+		51E8D9B32042942100833CCC /* YTNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTNavigationBar.m; sourceTree = "<group>"; };
 		84988FF4177244DA1AF56353 /* libPods-YTNewMedia_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YTNewMedia_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EE8DA273BBBFC4CBF54673 /* Pods-YTNewMedia_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTNewMedia_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTNewMedia_iOS/Pods-YTNewMedia_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		94BA787A92254D751F66FF0D /* Pods-YTNewMedia_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YTNewMedia_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YTNewMedia_iOSTests/Pods-YTNewMedia_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 				511DE9A320243B58003C0310 /* YTBaseTabBarController.m */,
 				511DE9A520243B8D003C0310 /* YTBaseNavController.h */,
 				511DE9A620243B8D003C0310 /* YTBaseNavController.m */,
+				51E8D9B22042942100833CCC /* YTNavigationBar.h */,
+				51E8D9B32042942100833CCC /* YTNavigationBar.m */,
 				511DE9B920244971003C0310 /* YTCustomNav.h */,
 				511DE9BA20244971003C0310 /* YTCustomNav.m */,
 			);
@@ -632,6 +637,7 @@
 				511DE9A120243B12003C0310 /* YTBaseViewController.m in Sources */,
 				511DE9B220243F4F003C0310 /* YTDiscoverViewController.m in Sources */,
 				518E5172202304EB00BD22E6 /* ViewController.m in Sources */,
+				51E8D9B42042942100833CCC /* YTNavigationBar.m in Sources */,
 				511DE9A420243B58003C0310 /* YTBaseTabBarController.m in Sources */,
 				51D9B10A202BF4800031068C /* YTVideoCell.m in Sources */,
 				518E516B2023018500BD22E6 /* main.m in Sources */,

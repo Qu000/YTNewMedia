@@ -27,13 +27,15 @@
 #pragma mark --- To prepare
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    [self setupNav];
+    self.appWindow.hidden = NO;
     [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
+    self.appWindow.hidden = YES;
+    self.appWindow = nil;
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 -(NSMutableArray *)dataList{

@@ -19,13 +19,14 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    self.appWindow.hidden = NO;
     [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
+    self.appWindow.hidden = YES;
+    self.appWindow = nil;
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 
@@ -55,9 +56,12 @@
 - (void)setupControls{
     UIImageView * headImg = [[UIImageView alloc]init];
     headImg.backgroundColor = [UIColor orangeColor];
-    CGFloat headWH = 100;
-    
-    headImg.frame = CGRectMake(150, 60, headWH, headWH);
+    CGFloat headWH = SCREEN_WIDTH/3;
+//    [headImg mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(headWH, headWH));
+//        make.top.mas_equalTo(60);
+//    }];
+    headImg.frame = CGRectMake(headWH, 60, headWH, headWH);
     [self.scrollView addSubview:headImg];
     
     
